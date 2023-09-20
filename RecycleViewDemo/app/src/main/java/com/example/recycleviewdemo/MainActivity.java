@@ -34,52 +34,10 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
         superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
         superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
         superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
         superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
         superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
         superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
 
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-        superHeroList.add(new SuperHero("Siêu nhân vàng", R.drawable.img_3, "Siêu nhân vàng chạy nhanh"));
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-        superHeroList.add(new SuperHero("Siêu nhân vàng", R.drawable.img_3, "Siêu nhân vàng chạy nhanh"));
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-
-        superHeroList.add(new SuperHero("Siêu nhân đỏ", R.drawable.img, "Siêu nhân đỏ rất mạnh"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh", R.drawable.img_1, "Siêu nhân xanh rất khoẻ"));
-        superHeroList.add(new SuperHero("Siêu nhân xanh 2", R.drawable.img_2, "Siêu nhân xanh 2 bơi giỏi"));
-        superHeroList.add(new SuperHero("Siêu nhân vàng", R.drawable.img_3, "Siêu nhân vàng chạy nhanh"));
-        superHeroList.add(new SuperHero("Siêu nhân vàng", R.drawable.img_3, "Siêu nhân vàng chạy nhanh"));
     }
 
     @Override
