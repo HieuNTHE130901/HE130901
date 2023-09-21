@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RegistrationActivity">
+    tools:context=".activities.RegistrationActivity">
+
+    >
 
     <ImageView
         android:id="@+id/reg_img"
@@ -28,11 +30,11 @@
         android:drawableLeft="@drawable/ic_account"
         android:drawablePadding="10dp"
         android:elevation="3dp"
+        android:hint="Name"
         android:padding="13dp"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/reg_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_img"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
@@ -44,11 +46,11 @@
         android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="10dp"
         android:elevation="3dp"
+        android:hint="Email"
         android:padding="13dp"
-        android:text="Email"
-        app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
@@ -60,36 +62,50 @@
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="10dp"
         android:elevation="3dp"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:padding="13dp"
-        android:text="Password"
-        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintWidth_percent=".8" />
 
     <Button
         android:id="@+id/signup_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Sign Up"
-        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <!-- Text view for "Already have an account? Sign in" -->
     <TextView
         android:id="@+id/signin_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account? SIGN IN"
-        android:textColor="@android:color/black"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/signup_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:clickable="true"
         android:focusable="true"
-        android:onClick="goToSignInActivity" />
+        android:onClick="goToSignInActivity"
+        android:text="Already have an account? SIGN IN"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_button" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_link"
+        app:layout_constraintVertical_bias=".1"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

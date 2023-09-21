@@ -12,14 +12,34 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.groceryapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_profile"
+        android:name="com.example.groceryapplication.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.groceryapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_category"
+        android:name="com.example.groceryapplication.ui.category.CategoryFragment"
+        android:label="@string/category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.example.groceryapplication.ui.offers.OffersFragment"
+        android:label="@string/offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/newProductFragment"
+        android:name="com.example.groceryapplication.ui.newproduct.NewProductFragment"
+        android:label="@string/newProduct"
+        tools:layout="@layout/fragment_newproduct" />
+    <fragment
+        android:id="@+id/myOrdersFragment"
+        android:name="com.example.groceryapplication.ui.orders.MyOrdersFragment"
+        android:label="@string/myOrders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/myCartsFragment"
+        android:name="com.example.groceryapplication.ui.carts.MyCartsFragment"
+        android:label="@string/myCarts"
+        tools:layout="@layout/fragment_my_carts" />
 </navigation>
