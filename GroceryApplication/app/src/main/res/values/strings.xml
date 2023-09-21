@@ -19,4 +19,8 @@
     <string name="newProduct">New Products</string>
     <string name="myOrders">My Orders</string>
     <string name="myCarts">My Carts</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_new_product">New Product</string>
+    <string name="offer">Offer</string>
+    <string name="menu_offer">Offer</string>
 </resources>

@@ -1,30 +1,35 @@
-package com.example.groceryapplication.ui.home;
+package com.example.groceryapplication.ui.offer;
 
 import androidx.lifecycle.ViewModelProvider;
+
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.groceryapplication.databinding.FragmentHomeBinding;
-import com.example.groceryapplication.ui.home.HomeViewModel;
+import com.example.groceryapplication.R;
+import com.example.groceryapplication.databinding.FragmentOfferBinding;
 
-public class HomeFragment extends Fragment {
+public class OfferFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+
+    private FragmentOfferBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        OfferViewModel homeViewModel =
+                new ViewModelProvider(this).get(OfferViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentOfferBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textNewProduct;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

@@ -1,18 +1,18 @@
-
-
-package com.example.groceryapplication.ui.home;
+package com.example.groceryapplication.ui.offer;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class OfferViewModel extends ViewModel {
+    // TODO: Implement the ViewModel
+
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public OfferViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is offer fragment");
     }
 
     public LiveData<String> getText() {

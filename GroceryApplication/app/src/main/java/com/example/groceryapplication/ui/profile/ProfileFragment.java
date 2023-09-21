@@ -8,26 +8,24 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
-import com.example.groceryapplication.R;
-import com.example.groceryapplication.databinding.FragmentProfileBinding; // Import the correct binding class
-
+import com.example.groceryapplication.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {
 
-    private FragmentProfileBinding binding; // Declare the binding variable
+    private FragmentProfileBinding binding;
 
-    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        ProfileViewModel profileViewModel =
+                new ViewModelProvider(this).get(ProfileViewModel.class);
 
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = root.findViewById(R.id.nav_profile); // Replace with the actual ID
-
-        // Do any further setup with your views here
-
+        final TextView textView = binding.textProfile;
+        profileViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
