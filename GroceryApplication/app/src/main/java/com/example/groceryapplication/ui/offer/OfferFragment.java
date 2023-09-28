@@ -29,7 +29,7 @@ public class OfferFragment extends Fragment {
         binding = FragmentOfferBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNewProduct;
+        final TextView textView = binding.textOffer;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

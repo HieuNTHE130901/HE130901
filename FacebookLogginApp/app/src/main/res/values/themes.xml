@@ -2,7 +2,15 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FacebookLogginApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Set the primary color to pink -->
+        <item name="colorPrimary">#FF4081</item>
+        <!-- Set the primary dark color to a darker shade of pink -->
+        <item name="colorPrimaryDark">#D81B60</item>
+        <!-- Set the accent color to a different shade of pink -->
+        <item name="colorAccent">#FF80AB</item>
+        <item name="android:windowBackground">#F1CDF3</item>
+        <item name="android:textColor">#F40000</item>
+
     </style>
 
     <style name="Theme.FacebookLogginApp" parent="Base.Theme.FacebookLogginApp" />
