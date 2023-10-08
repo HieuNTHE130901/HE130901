@@ -1,19 +1,13 @@
 package com.example.demoexternalfilestorage;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -24,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 1;
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 2;
     private TextView textView;
-
+    private final String fileName = "my_external.txt";
 
     /* STEP 2: Checks if external storage is available for read and write */
     public boolean isExternalStorageWritable() {
@@ -44,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return isReadable;
     }
+    /* STEP 2: Checks if external storage is available for read and write */
 
 
     private void writeDataToExternalStorage() {
@@ -63,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (externalFilesDir != null) {
                 //STEP 4: Create a file in the external storage directory
-                File myFile = new File(externalFilesDir, "my_external_data.txt");
+                File myFile = new File(externalFilesDir, fileName);
 
                 try {
                     // Write the text to the file
@@ -93,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (externalFilesDir != null) {
                 /* STEP 4: Read a file to external storage*/
-                File myFile = new File(externalFilesDir, "my_external_data.txt");
+                File myFile = new File(externalFilesDir, fileName);
+
                 try {
                     //Read string from txt file created.
                     FileInputStream fis = new FileInputStream(myFile);
@@ -121,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             File externalFilesDir = getExternalFilesDir(null);
 
             if (externalFilesDir != null) {
-                File myFile = new File(externalFilesDir, "my_external_data.txt");
+                File myFile = new File(externalFilesDir, fileName);
 
                 if (myFile.exists()) {
 
