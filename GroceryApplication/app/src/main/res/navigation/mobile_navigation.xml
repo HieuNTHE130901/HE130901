@@ -26,7 +26,11 @@
         android:name="com.example.groceryapplication.ui.offer.OfferFragment"
         android:label="@string/menu_offer"
         tools:layout="@layout/fragment_offer" />
-
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.groceryapplication.ui.map.MapsFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_maps" />
 
 
 </navigation>

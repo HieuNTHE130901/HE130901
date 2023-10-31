@@ -28,10 +28,8 @@ public class RegistrationActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button signupButton;
     private TextView signinLink;
-
     private FirebaseAuth mAuth;
     private FirebaseDatabase firebaseDatabase;
-
     private ProgressBar progressBar;
 
     @Override

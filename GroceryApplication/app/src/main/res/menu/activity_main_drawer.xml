@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_home"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_profile"
@@ -22,6 +22,12 @@
             android:id="@+id/nav_offer"
             android:icon="@drawable/ic_offer"
             android:title="@string/menu_offer" />
+        <item
+            android:id="@+id/nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_map"
+            android:title="@string/menu_map" />
 
 
     </group>
